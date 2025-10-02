@@ -1,0 +1,25 @@
+#banner {
+    font-family:'Fugaz One' ;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Fugaz One';
+    text-align: center;
+
+}
+
+ul {
+    font-family:'Libre Franklin' ;
+    text-align: center;
+}
+
+#banner, footer {
+     background: #fcdeec;
+    background: radial-gradient(circle, rgba(252, 222, 236, 1) 24%, rgba(148, 187, 233, 1) 100%);
+    padding: 20px;
+    color: #FFF9A5;
+    text-align: center;
+}
+
+
