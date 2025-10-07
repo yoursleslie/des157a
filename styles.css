@@ -1,6 +1,21 @@
+header {
+padding:0;
+}
+
+#banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#banner h2 {
+    font-size: 1.2em;
+    color: #230903;
+}
+
 #banner {
     font-family:'Fugaz One' ;
-    font-size: 50px;
+    font-size: 25px;
+    padding: 20px;
 }
 
 h2 {
@@ -9,17 +24,91 @@ h2 {
 
 }
 
-ul {
-    font-family:'Libre Franklin' ;
+footer {
+    padding: 40px;
+    margin-bottom: 0;
+    border: 20px;
+
+}
+#banner, footer {
+  
+     background: #DFEFCA;
+     background: linear-gradient(90deg,rgba(223, 239, 202, 1) 0%, rgba(255, 223, 237, 1) 50%);
+    color: #064789;
     text-align: center;
+}
+  
+body {
+    margin: 0;
+    background-color: #d2e3f7;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
 
-#banner, footer {
-     background: #fcdeec;
-    background: radial-gradient(circle, rgba(252, 222, 236, 1) 24%, rgba(148, 187, 233, 1) 100%);
-    padding: 20px;
-    color: #FFF9A5;
-    text-align: center;
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 60px;
+    justify-items: stretch;
+    align-items: stretch;
+   
 }
+
+#container {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 850px;
+    height: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#research { 
+    background-color: #FFDFED; color: #064789; 
+}
+#madlib { 
+    background-color: #DFEFCA; 
+    color: #064789; 
+}
+#everypicture { 
+    background-color: #DFEFCA; 
+    color: #064789; }
+#gameon { 
+    background-color: #FFDFED; 
+    color: #064789; 
+}
+
+ul { 
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    font-family:'Libre Franklin' ;
+    text-align: center;
+
+}
+
+main h2 {
+    margin-bottom: 0;
+}
+
+#research, 
+#madlib, 
+#everypicture, 
+#gameon {
+  border-radius: 20px; /
+  padding: 20px;      
+  box-shadow: 0 4px 10px #230903; /
+}
+
+li {
+    padding: 5px;
+}
+
 
 
