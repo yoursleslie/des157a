@@ -12,7 +12,7 @@ padding:0;
     color: #230903;
 }
 
-#banner {
+#banner, #footer {
     font-family:'Fugaz One' ;
     font-size: 25px;
     padding: 20px;
@@ -24,10 +24,9 @@ h2 {
 
 }
 
-footer {
-    padding: 40px;
-    margin-bottom: 0;
-    border: 20px;
+footer{
+    border: 0;
+    width: 100%;
 }
 
 
@@ -35,17 +34,8 @@ footer a {
     color: #064789;
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 600;
-
 }
 
-
-#banner, footer {
-  
-     background: #DFEFCA;
-     background: linear-gradient(90deg,rgba(223, 239, 202, 1) 0%, rgba(255, 223, 237, 1) 50%);
-    color: #064789;
-    text-align: center;
-}
   
 body {
     margin: 0;
@@ -129,7 +119,7 @@ li:hover {
     transform: scale(1.2);
     box-shadow: 0 4px 10px #230903;
 }
-#banner, footer {
+#banner, #footer {
     width: 100%;
     background: linear-gradient(90deg, #DFEFCA, #FFDFED, #DFEFCA);
     background-size: 300% 300%;
@@ -139,7 +129,6 @@ li:hover {
     animation: gradientShift 8s ease infinite;
 }
 
-/* Animation keyframes */
 @keyframes gradientShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
