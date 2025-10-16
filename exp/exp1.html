@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expirement 01</title>
+</head>
+<body>
+    <h1>Expirement 1 - Fizz Buzz</h1>
+
+
+    <script>
+        // This program prnts numbers 1 to 100 in the console log
+        // For numbers with multipes of 5 its prints buzz and for mutiples of 3 it prints fizz
+        // for numbers with both mutiples of 3 and 5, it prints fizzbuzz
+
+
+        var fizz = 0;
+        var buzz = 0;
+
+        // loop repreats from 0-100
+      for (var i = 0; i <= 100; i++) {
+        fizz++; // sequence that increments fizz variable
+        buzz++; // sequence that increments buzz
+
+
+        // selection: using if else statements to decison make
+     if (fizz === 3 && buzz === 5) {
+            console.log("fizzbuzz");
+            fizz = 0;
+            buzz = 0;
+    } else if (fizz === 3) {
+            console.log("fizz");
+            fizz = 0;
+     } else if (buzz === 5) {
+            console.log("buzz");
+            buzz = 0;
+    } else {
+            console.log(i);
+    }
+    }
+
+    </script>
+</body>
+</html>
