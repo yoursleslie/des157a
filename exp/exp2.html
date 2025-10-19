@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expirement 2</title>
+</head>
+<body>
+    <h1>Expirement 2 - Pick A Color!</h1>
+
+    <script>
+        /* What my program does is ask the user to
+        choose their favorite color of the rainbow.
+        Then stores the choice and changes the 
+        background to the color chosen. */
+        
+
+        function changeBG (){
+            var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+            var colorpicked = prompt ("Pick your favorite color of the rainbow")
+
+            if (colorpicked.toLowerCase() === "red"){
+                document.body.style.backgroundColor = colorpicked.toLowerCase ();
+
+                var message = document.createElement("h2");
+                message.textContent = `The background is now ${colorpicked}`;
+                document.body.appendChild (message);
+    
+            } else if (colorpicked.toLowerCase() === "orange"){
+                document.body.style.backgroundColor = colorpicked.toLowerCase ();
+
+                var message = document.createElement("h2");
+                message.textContent = `The background is now ${colorpicked}`;
+                document.body.appendChild(message);
+            }   else if (colorpicked.toLowerCase() === "yellow"){
+                document.body.style.backgroundColor = colorpicked.toLowerCase ();
+
+                var message = document.createElement("h2");
+                message.textContent = `The background is now ${colorpicked}`;
+                document.body.appendChild(message);
+            } else if (colorpicked.toLowerCase() === "green"){
+                document.body.style.backgroundColor = colorpicked.toLowerCase ();
+
+                var message = document.createElement("h2");
+                message.textContent = `The background is now ${colorpicked}`;
+                document.body.appendChild(message);
+            } else if (colorpicked.toLowerCase() === "blue"){
+                document.body.style.backgroundColor = colorpicked.toLowerCase ();
+
+                var message = document.createElement("h2");
+                message.textContent = `The background is now ${colorpicked}`;
+                document.body.appendChild(message);
+            }   else if (colorpicked.toLowerCase() === "indigo"){
+                document.body.style.backgroundColor = colorpicked.toLowerCase ();
+
+                var message = document.createElement("h2");
+                message.textContent = `The background is now ${colorpicked}`;
+                document.body.appendChild(message);
+            } else if (colorpicked.toLowerCase() === "violet"){
+                document.body.style.backgroundColor = colorpicked.toLowerCase ();
+
+                var message = document.createElement("h2");
+                message.textContent = `The background is now ${colorpicked}`;
+                document.body.appendChild(message);
+            } else {
+                document.body.style.backgroundColor = "white";
+
+                var message = document.createElement("h2");
+                message.textContent = `Error: Invalid Input`;
+                document.body.appendChild(message);
+                
+            }
+
+            
+        }
+
+        changeBG();
+    </script>
+</body>
+</html>
