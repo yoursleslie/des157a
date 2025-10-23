@@ -15,6 +15,7 @@ header{
  
 
 body {
+    background-color: black;
     background-image:url(images/madlibs-bi.jpg);
     background-repeat: no-repeat;
     background-position: center top;
@@ -23,8 +24,11 @@ body {
 }
 
 footer{
-    position: fixed;
-    bottom: 0;
+    background-color:black ;
+    width: 100%;
+    margin-top: 0;
+    position: static;
+    
     font-size: large;
 }
 
@@ -36,8 +40,10 @@ form {
 
     border-radius: 20px;
     border: 2px solid #eabc33;
-    align-items: inline;
     width: max-content;
+
+    position: relative;
+    z-index: 2;
 }
 
 button{
@@ -52,16 +58,19 @@ button{
     gap: 20px;
     justify-content: center;
     align-items: flex-start;
+
+    font-family: 'Josefin Sans';
     
 }
 #overlay {
-    /* visibility: hidden; */
     background-color: rgba(234, 188, 51, 90%);
     padding: 20px;
     margin-right: 20px;
-    
+
     margin-bottom: 20px;
     border-radius: 20px;
     border: 2px solid #eabc33;
-    align-items: inline;
+    z-index: 3;
+    position: relative;
 }
+
