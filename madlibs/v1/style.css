@@ -1,0 +1,67 @@
+
+header,footer{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    font-family: 'Londrina Outline';
+    color:#f2b949;
+}
+
+header{
+    font-size: x-large;
+    
+}
+ 
+
+body {
+    background-image:url(images/madlibs-bi.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    color: whitesmoke;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    font-size: large;
+}
+
+
+form {
+    background-color: rgba(234, 188, 51, 90%);
+    padding: 20px;
+    margin: 0 0 20px 20px;
+
+    border-radius: 20px;
+    border: 2px solid #eabc33;
+    align-items: inline;
+    width: max-content;
+}
+
+button{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgba(146, 7, 7, 0.75);
+    border: 2px solid rgb(131, 28, 28);
+}
+
+#box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+#overlay {
+    /* visibility: hidden; */
+    background-color: rgba(234, 188, 51, 90%);
+    padding: 20px;
+    margin-right: 20px;
+    
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid #eabc33;
+    align-items: inline;
+}
