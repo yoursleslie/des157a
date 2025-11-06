@@ -1,0 +1,37 @@
+header h1 {
+    font-family: 'Meddon';
+    color: white;
+}
+
+header{
+    text-align: center;
+    background: #3b3b47;
+    background: linear-gradient(0deg, rgba(59, 59, 71, 1) 0%, rgba(15, 15, 15, 1) 100%);
+    padding-top:35px;
+    padding-bottom: 0;
+    margin-top: 0;
+    height: 200px;
+    font-size: large;
+}
+
+ html{
+    background-color: #3B3B47;
+ }
+
+ footer {
+    font-family: 'Meddon';
+    padding-top: 20px;
+    margin-bottom: 0;
+    position: static;
+    text-align: center;
+    color: white;
+    background: #0f0f0f;
+    background: linear-gradient(0deg, rgba(15, 15, 15, 1) 0%, rgba(59, 59, 71, 1) 100%, rgba(59, 59, 71, 1) 50%);
+    height: 200px;
+ }
+
+ main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
