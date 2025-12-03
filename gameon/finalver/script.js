@@ -1,48 +1,74 @@
-((function(){
-
+(function () {
     'use strict';
     console.log('reading js');
 
+    const startBtn = document.querySelector('#startgame');
+    const gameDiv = document.querySelector('#game');
 
-    const startgame = document.querySelector('#startgame');
-    const gamecontrol = document.querySelector ('#gamecontrol');
-    const gamearea = document.querySelector ('#game');
-    const data = {
-        players: ['player1', 'player2'],
-        p1guess: 0,
-        p2guess: 0,
-        index: 0
-    };
+    let secretNumber = 0;
+    let currentPlayer = 1;
 
-    const fnum = document.querySelector ('#finalNUm')
-    const number = Math.floor(Math.random() * 100);
-    console.log (number);
-    // fnum.innerHTML = `<h2> ${number} </h2>`;
+    startBtn.addEventListener('click', startGame);
 
+    function startGame() {
+        startBtn.textContent = "Start Over";
 
+        secretNumber = Math.floor(Math.random() * 100) + 1;
+        currentPlayer = 1;
 
-    startgame.addEventListener ('click', function(){
-        gamecontrol.innerHTML = '<h2> Game has started </h2>';
-        gamecontrol.innerHTML += '<button id = "quit"> want to start over?</button>';
+        console.log("Secret number:", secretNumber);
 
-        document.querySelector('#quit').addEventListener('click', function(){
-            location.reload();
+        gameDiv.innerHTML = `
+            <h3 id="feedback"></h3>
+            <h2 id="turnDisplay">Player 1 — guess a number 1–100</h2>
+            <input type="number" id="guessInput" placeholder="Enter number">
+            <button id="guessBtn">Submit Guess</button>
+        `;
+
+        setupGuessing();
+    }
+
+    function setupGuessing() {
+        const guessBtn = document.querySelector('#guessBtn');
+        const guessInput = document.querySelector('#guessInput');
+        const feedback = document.querySelector('#feedback');
+        const turnDisplay = document.querySelector('#turnDisplay');
+
+        guessBtn.addEventListener('click', () => {
+            const guess = Number(guessInput.value);
+
+            if (!guess || guess < 1 || guess > 100) {
+                feedback.textContent = "Enter a valid number 1–100.";
+                return;
+            }
+
+            // ❗ WIN CONDITION
+            if (guess === secretNumber) {
+                gameDiv.innerHTML = `
+                    <h1>Player ${currentPlayer} WINS!</h1>
+                    <h1>The number was ${secretNumber}</h1>
+                `;
+                return;
+            }
+
+            // Too high/too low
+            if (guess < secretNumber) {
+                feedback.textContent = "Too low!";
+            } else {
+                feedback.textContent = "Too high!";
+            }
+
+            // Switch players
+            currentPlayer = currentPlayer === 1 ? 2 : 1;
+            turnDisplay.textContent = `Player ${currentPlayer} — guess a number 1–100`;
+
+            guessInput.value = "";
+            guessInput.focus();
         });
+    }
 
-        setupturn ();
-        data.index = Math.round(Math.random ());
-        console.log (data.index);
-        console.log ('set up the turn');
-        
+})();
 
-    });
 
-   function setupturn (){
-    gamearea.innerHTML = `<h2> ${data.players[data.index]} guess a number between 1 - 100 <h2>`;
 
-    // gamecontrol.innerHTML = '<h2> Game has started </h2>';
-    gamearea.innerHTML += '<input type = "text" id="number" name="number1">';
-   };
 
-    
-}()));
