@@ -31,11 +31,11 @@
         const adj4 = document.querySelector('#adjective4').value;
 
 
-       madLib.innerHTML= `<p>In a ${adj1} galaxy many, many years ago far, far away, a brave young hero picked up their trusty ${noun1}and set off to ${adj2}. When they were  ${verbing} along the grimy streets, a mysterious stranger leaned over and proclaimed, "Only you can rescue us from the evil  ${creasingle}." </p>
+    //    madLib.innerHTML= `<p>In a ${adj1} galaxy many, many years ago far, far away, a brave young hero picked up their trusty ${noun1}and set off to ${adj2}. When they were  ${verbing} along the grimy streets, a mysterious stranger leaned over and proclaimed, "Only you can rescue us from the evil  ${creasingle}." </p>
 
-        <p>Abruptly, a group of  ${creaplu} appeared, brandishing their  ${weapon}. The hero  ${verbP} bravely and bellowed,"${excla}". With  ${adj3} speed, they leapt into their StarFighter - ${letnum} and set off towards the stars. </p>
+    //     <p>Abruptly, a group of  ${creaplu} appeared, brandishing their  ${weapon}. The hero  ${verbP} bravely and bellowed,"${excla}". With  ${adj3} speed, they leapt into their StarFighter - ${letnum} and set off towards the stars. </p>
 
-        <p>They knew the destiny of the galaxy was in  ${num} brave rebels and one powerful  ${noun1}. When the ship disappeared in hyperspace, the last sound echoing in the air was  ${adj4} laughter</p>`
+    //     <p>They knew the destiny of the galaxy was in  ${num} brave rebels and one powerful  ${noun1}. When the ship disappeared in hyperspace, the last sound echoing in the air was  ${adj4} laughter</p>`
 
         let myText;
 
@@ -79,7 +79,13 @@
             myText = "please provide an adjective";
             alert (myText);
         } else {
-            overlay.style.visibility='visible';
+        overlay.style.visibility='visible';
+
+         madLib.innerHTML= `<p>In a ${adj1} galaxy many, many years ago far, far away, a brave young hero picked up their trusty ${noun1}and set off to ${adj2}. When they were  ${verbing} along the grimy streets, a mysterious stranger leaned over and proclaimed, "Only you can rescue us from the evil  ${creasingle}." </p>
+
+        <p>Abruptly, a group of  ${creaplu} appeared, brandishing their  ${weapon}. The hero  ${verbP} bravely and bellowed,"${excla}". With  ${adj3} speed, they leapt into their StarFighter - ${letnum} and set off towards the stars. </p>
+
+        <p>They knew the destiny of the galaxy was in  ${num} brave rebels and one powerful  ${noun1}. When the ship disappeared in hyperspace, the last sound echoing in the air was  ${adj4} laughter</p>`
 
         document.querySelector('#adjective1').value = '';
         document.querySelector('#noun1').value = '';
